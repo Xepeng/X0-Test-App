@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { X0PayComponent } from 'x0-react-sdk';
 
 function App() {
+  // Example transaction params
+  const transactionParams = {
+    merchantNumber: '12345',
+    transferAmount: 150000, // 10.5 USDC (number, not string)
+    feeAmount: 0, // 0.5 USDC (number, not string)
+    isInnerFee: false,
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>X0Pay SDK Demo</h1>
       </header>
+      <main>
+        <X0PayComponent
+          transactionParams={transactionParams}
+          onSuccess={(txHash) => alert(`Success! ${txHash}`)}
+          onError={(err) => alert(`Error: ${err.message}`)}
+        />
+      </main>
     </div>
   );
 }
