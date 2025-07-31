@@ -1,0 +1,256 @@
+.x0pay-container {
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #e1e5e9;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.x0pay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e1e5e9;
+}
+
+.x0pay-header h2 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.x0pay-step {
+    text-align: center;
+}
+
+.x0pay-step h3 {
+    margin: 0 0 16px 0;
+    color: #1a1a1a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.x0pay-step p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+}
+
+.x0pay-transaction-details {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    text-align: left;
+}
+
+.x0pay-transaction-details p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.x0pay-transaction-details strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.x0pay-select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1e5e9;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+    margin-bottom: 16px;
+}
+
+.x0pay-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.x0pay-select:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: #f8f9fa;
+}
+
+.x0pay-select option {
+    padding: 8px;
+}
+
+.x0pay-token-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.x0pay-token-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.x0pay-token-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.x0pay-token-info .x0pay-token-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.x0pay-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 140px;
+}
+
+.x0pay-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.x0pay-button-primary {
+    background: #007bff;
+    color: white;
+}
+
+.x0pay-button-primary:hover:not(:disabled) {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.x0pay-button-success {
+    background: #28a745;
+    color: white;
+}
+
+.x0pay-button-success:hover:not(:disabled) {
+    background: #1e7e34;
+    transform: translateY(-1px);
+}
+
+.x0pay-button-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.x0pay-button-secondary:hover:not(:disabled) {
+    background: #545b62;
+    transform: translateY(-1px);
+}
+
+.x0pay-error {
+    color: #dc3545;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 16px 0 !important;
+    font-size: 14px;
+}
+
+.x0pay-wallet-info {
+    font-size: 14px;
+    color: #666;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e1e5e9;
+}
+
+.x0pay-selection-info {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e1e5e9;
+}
+
+/* Progress Bar Styles */
+.x0pay-progress-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.x0pay-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e1e5e9;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.x0pay-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    position: relative;
+}
+
+.x0pay-progress-fill::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.x0pay-progress-text {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+    margin-top: 4px;
+}
