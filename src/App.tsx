@@ -6,7 +6,7 @@ function App() {
   // Example transaction params
   const transactionParams = {
     merchantNumber: '12345',
-    transferAmount: 150000, // 10.5 USDC (number, not string)
+    transferAmount: 160000, // 10.5 USDC (number, not string)
     feeAmount: 0, // 0.5 USDC (number, not string)
     isInnerFee: false,
   };
