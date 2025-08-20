@@ -4036,10 +4036,10 @@ ws@^7.5.1, ws@^7.5.10:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.10.tgz#58b5c20dc281633f6c19113f39b349bd8bd558d9"
   integrity sha512-+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==
 
-x0-react-sdk@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/x0-react-sdk/-/x0-react-sdk-1.0.8.tgz#b9710d6af8271fbc7b945b1fe3ad43c692e8873a"
-  integrity sha512-50dm3dkiO3BJE8uk92y8yEe4wRQQAgI2y9uJq0jmuRPirWtMIUwbVAY3lzOhbUe8naLr84VPNOvjnKLaLshMvQ==
+x0-react-sdk@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/x0-react-sdk/-/x0-react-sdk-1.0.9.tgz#c368cc37e68f6f486188662464e5a8f70c43ebba"
+  integrity sha512-RyvRjRBdU3Kw4VgdTYs7okH4NjR3bBA+aKBptr1yYjwu4FK7iFcBFHf3RcEfSZneEMh7hD8ZGvfaccfFAg7ZpA==
   dependencies:
     "@hyperlane-xyz/core" "^3.0.0"
     "@walletconnect/ethereum-provider" "^2.10.0"
