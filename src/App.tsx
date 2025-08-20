@@ -36,14 +36,16 @@ function App() {
   // Example transaction params
   const transactionParams = {
     merchantNumber: '12345',
-    transferAmount: 15000, // 15,000 IDR
+    transferAmount: 16000, // 10.5 USDC (number, not string)
+    feeAmount: 0, // 0.5 USDC (number, not string)
+    isInnerFee: false,
   };
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>X0Pay SDK Demo - X0Chain</h1>
-      </header>
+      {/*<header className="App-header">*/}
+      {/*  <h1>X0Pay SDK Demo</h1>*/}
+      {/*</header>*/}
       <main>
         <X0PayComponent
           clientConfig={clientConfig}
