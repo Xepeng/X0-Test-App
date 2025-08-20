@@ -54,7 +54,7 @@ function App() {
           onError={(err) => alert(`Error: ${err.message}`)}
           enableWalletConnect={true}
           walletConnectProjectId="ae3afbf40e1ac9b7cf433248048853c1"
-          workerApiUrl="http://localhost:3000"
+          workerApiUrl="http://relayer.x0pay.com"
         />
       </main>
     </div>
