@@ -3,6 +3,11 @@ import './App.css';
 import { X0PayComponent, X0PayClientConfig } from 'x0-react-sdk';
 
 function App() {
+  // Get URL query parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const merchantNumberFromUrl = urlParams.get('merchantNumber');
+  const transferAmountFromUrl = urlParams.get('transferAmount');
+
   // X0Chain client configuration
   const clientConfig: X0PayClientConfig = {
     chains: [
@@ -40,10 +45,10 @@ function App() {
     ],
   };
 
-  // Example transaction params
+  // Example transaction params with URL query fallbacks
   const transactionParams = {
-    merchantNumber: '12345',
-    transferAmount: 16000, // 10.5 USDC (number, not string)
+    merchantNumber: merchantNumberFromUrl || '12345',
+    transferAmount: transferAmountFromUrl ? parseInt(transferAmountFromUrl, 10) : 16000, // Parse from URL or use default
     feeAmount: 0, // 0.5 USDC (number, not string)
     isInnerFee: false,
   };
