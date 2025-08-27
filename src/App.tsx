@@ -37,6 +37,14 @@ function App() {
             decimals: 6,
             hypColAddress: '0x3c3Cac8e7258C5928a89e1dFe804b7D7cab6429e',
           },
+          {
+            symbol: 'USDT-AVA',
+            name: 'USDT-AVA',
+            address: '0x463D39FDdD343B1FcA2B17Aa96e121A1Bb1988E3',
+            decimals: 6,
+            hypColAddress: '0x463D39FDdD343B1FcA2B17Aa96e121A1Bb1988E3',
+            destinationDomain: 43114, // Avalanche domain
+          },
         ],
         hookAddress: '0x14fD8C5eAe7A7F9AB17b605Dc7b12aC24A9329A6',
         destinationDomain: 137,
