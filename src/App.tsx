@@ -74,6 +74,7 @@ function App() {
           enableWalletConnect={true}
           walletConnectProjectId="ae3afbf40e1ac9b7cf433248048853c1"
           workerApiUrl="https://relayer.x0pay.com"
+          enableSafe={true}
         />
       </main>
     </div>
