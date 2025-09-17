@@ -75,7 +75,7 @@ function App() {
           onError={(err) => alert(`Error: ${err.message}`)}
           enableWalletConnect={true}
           walletConnectProjectId="ae3afbf40e1ac9b7cf433248048853c1"
-          workerApiUrl="https://api.langitchain.xyz"
+          workerApiUrl="https://worker.x0pay.com"
           enableSafe={true}
         />
       </main>
