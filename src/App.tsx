@@ -7,6 +7,7 @@ function App() {
   const urlParams = new URLSearchParams(window.location.search);
   const transferAmountFromUrl = urlParams.get('transferAmount');
   const orderIdFromUrl = urlParams.get('orderId');
+  const feeAmountFromUrl = urlParams.get('feeAmount');
   // X0Chain client configuration
   const clientConfig: X0PayClientConfig = {
     chains: [
@@ -56,7 +57,7 @@ function App() {
   const transactionParams = {
     orderId: orderIdFromUrl || '12345',
     transferAmount: transferAmountFromUrl ? parseInt(transferAmountFromUrl, 10) : 16000, // Parse from URL or use default
-    feeAmount: 0, // 0.5 USDC (number, not string)
+    feeAmount: feeAmountFromUrl ? parseInt(feeAmountFromUrl, 10) : 0, // 0.5 USDC (number, not string)
     isInnerFee: false,
   };
 
