@@ -74,9 +74,9 @@ function App() {
           onError={(err) => alert(`Error: ${err.message}`)}
           enableWalletConnect={true}
           walletConnectProjectId="ae3afbf40e1ac9b7cf433248048853c1"
-          workerApiUrl="http://localhost:3000"
+          workerApiUrl="https://worker.x0pay.com"
           enableSafe={true}
-          apiKey='x0_sdk_key_1234567890abcdef'
+          apiKey='x0_sdk_key_1234567890abchjk'
         />
       </main>
     </div>
